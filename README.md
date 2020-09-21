@@ -36,37 +36,37 @@ vultr实际上是折算成小时来计费的，比如服务器是5美元1个月�
 
 温馨提醒：同样的服务器位置，不同的宽带类型和地区所搭建的账号的翻墙速度会不同，这与中国电信、中国联通、中国移动国际出口带宽和线路不同有关，所以以实测为准。可以先选定一个服务器位置来按照教程进行搭建，熟悉搭建方法，当账号搭建完成并进行了bbr加速后，测试下速度自己是否满意，如果满意那就用这个服务器位置的服务器。如果速度不太满意，就一次性开几台不同的服务器位置的服务器，然后按照同样的方法来进行搭建并测试，选择最优的，之后把其它的服务器删掉，按小时计费测试成本可以忽略。
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_2009190906401.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/1.png?raw=true)
 
 这里可以选择举距离国内相对较近的日本、香港、新加坡节点
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_2009190910342.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/2.png?raw=true)
 
 这里注意最新的系统默认是centos8 x64，然后这个最新的centos8的系统在配置ss的时候，会有一些错误，后面我们会记录并给出解决方案，centos6的话就没有什么问题（可以点击图中的CentOS几个字，会弹出centos6，然后选中centos6）。
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_2009190910383.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/3.png?raw=true)
 
 接下来这一步是开启vps的ipv6 ip，选填项。如果你的电脑系统可以用ipv6，那么可以勾选此项。大多数用户没有这个需求，但有一些用户可能会用到，所以补充了这部分内容。
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_2009190916104.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/4.png?raw=true)
 
 ## 4.查看服务器信息
 
 开通服务器时，当出现了ip，不要立马去ping或者用xshell去连接，再等5分钟之后，有个缓冲时间。完成购买后，找到系统的密码记下来，部署服务器时需要用到。vps系统（推荐centos6）的密码获取方法如下图：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_2009190918455.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/5.png?raw=true)
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_2009190918496.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/6.png?raw=true)
 
 如果你开启了vps的ipv6，那么在后台的settings选项可以找到服务器的ipv6 ip。在部署SSR账号时，你用ipv6 ip就行。整个部署及使用过程中，记得把电脑系统开启ipv6喔。
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_2009190918527.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/7.png?raw=true)
 
 删掉服务器步骤如下图：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_2009190918558.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/8.png?raw=true)
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_2009190918589.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/9.png?raw=true)
 
 一个被墙ip的vps被删掉后，其ip并不会消失，会随机分配给下一个在这个服务器位置新建服务器的人，这就是为什么开新服务器会有一定几率开到被墙的ip。被墙是指在国内地区无法ping通服务器，但在国外是可以ping通的，vultr是面向全球服务，如果这个被墙ip被国外的人开到了，它是可以被正常使用的，半年或1年后这个被墙的ip可能会被国内防火墙解封，那么这就是一个良性循环。
 
@@ -80,9 +80,9 @@ Xshell windows版官网下载地址：https://www.netsarang.com/zh/xshell/
 
 学生可以下载免费版，直接输入你的邮箱，xshell就会把免费版下载链接发送到邮箱里：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909244210.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/10.png?raw=true)
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909244611.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/11.png?raw=true)
 
 Xshell Windows版安装文件百度云下载地址：
 
@@ -94,23 +94,23 @@ Xshell Windows版安装文件百度云下载地址：
 
 下载windows xshell软件并安装后，打开软件
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909272912.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/12.png?raw=true)
 
 选择文件，新建
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909273213.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/13.png?raw=true)
 
 随便取个名字，然后把你的服务器ip填上
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909273614.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/14.png?raw=true)
 
 连接国外ip即服务器时，软件会先后提醒你输入用户名和密码，用户名默认都是root，密码是你购买的服务器系统的密码。
 
 **如果xshell连不上服务器，没有弹出让你输入用户名和密码的输入框，表明你开到的ip是一个被墙的ip，遇到这种情况，重新开新的服务器，直到能用xshell连上为止，耐心点哦！如果同一个地区开了多台服务器还是不行的话，可以换其它地区。**
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909273815.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/15.png?raw=true)
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909274116.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/16.png?raw=true)
 
 连接成功后，会出现如上图所示，之后就可以复制粘贴代码部署了。
 
@@ -140,25 +140,25 @@ chmod +x shadowsocksR.sh
 
 复制上面的脚本一代码到VPS服务器里，复制代码用鼠标右键的复制，然后在vps里面右键粘贴进去，因为ctrl+c和ctrl+v无效。接着按回车键，脚本会自动安装，以后只需要运行这个快捷命令就可以出现下图的界面进行设置，快捷管理命令为：bash ssr.sh
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909342617.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/17.png?raw=true)
 
 如上图出现管理界面后，输入数字1来安装SSR服务端。如果输入1后不能进入下一步，那么请退出xshell，重新连接vps服务器，然后输入快捷管理命令bash ssr.sh 再尝试。
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909343018.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/18.png?raw=true)
 
 根据上图提示，依次输入自己想设置的端口和密码 (密码建议用复杂点的字母组合，端口号为40–65535之间的数字)，回车键用于确认
 
 注：关于端口的设置，总的网络总端口有6万多个，理论上可以任意设置，但不要以0开头！但是有的地区需要设置特殊的端口才有效，一些特殊的端口比如80、143、443、1433、3306、3389、8080。
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909343419.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/19.png?raw=true)
 
 如上图，选择想设置的加密方式，比如10，按回车键确认
 
 接下来是选择协议插件，如下图：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909343720.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/20.png?raw=true)
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909344021.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/21.png?raw=true)
 
 选择并确认后，会出现上图的界面，提示你是否选择兼容原版，这里的原版指的是SS客户端（SS客户端没有协议和混淆的选项），可以根据需求进行选择，演示选择y
 
@@ -166,29 +166,29 @@ chmod +x shadowsocksR.sh
 
 注意：如果协议是origin，那么混淆也必须是plain；如果协议不是origin，那么混淆可以是任意的。有的地区需要把混淆设置成plain才好用。因为混淆不总是有效果，要看各地区的策略，有时候不混淆（plain）或者（origin和plain一起使用），让其看起来像随机数据更好。（特别注意：tls 1.2_ticket_auth容易受到干扰！请选择除tls开头以外的其它混淆！！！）
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909344322.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/22.png?raw=true)
 
 进行混淆插件的设置后，会依次提示你对设备数、单线程限速和端口总限速进行设置，默认值是不进行限制，个人使用的话，选择默认即可，即直接敲回车键。
 
 注意：关于限制设备数，这个协议必须是非原版且不兼容原版才有效，也就是必须使用SSR协议的情况下，才有效！
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909344623.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/23.png?raw=true)
 
 之后代码就正式自动部署了，到下图所示的位置，提示你下载文件，输入：y
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909345024.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/24.png?raw=true)
 
 **（这里，如果你的系统是CentOs8，请跳至步骤4.CentOs8安装SSR踩坑）**耐心等待一会，出现下面的界面即部署完成：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909345325.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/25.png?raw=true)
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909345626.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/26.png?raw=true)
 
 根据上图就可以看到自己设置的SSR账号信息，包括IP、端口、密码、加密方式、协议插件、混淆插件，这些信息需要填入你的SSR客户端。如果之后想修改账号信息，直接输入快捷管理命令：bash ssr.sh 进入管理界面，选择相应的数字来进行一键修改。例如：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909345927.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/27.png?raw=true)
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091909350228.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/28.png?raw=true)
 
 脚本演示结束。
 
@@ -198,7 +198,7 @@ chmod +x shadowsocksR.sh
 
 **安装完成，ssr服务启动失败：**
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091910361129.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/29.png?raw=true)
 
 对CentOs系统进行参数配置，配置完成启动的时候可能会**失败**，这时参考下面的问题。 需要注意的几个问题是：
 
@@ -244,9 +244,9 @@ firewall-cmd --reload
 bash ssr.sh
 ```
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091910374730.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/30.png?raw=true)
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091910384831.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/31.png?raw=true)
 
 # 第三步：一键加速VPS服务器
 
@@ -268,13 +268,13 @@ MAC SSR客户端 [下载地址](https://github.com/shadowsocksr-backup/Shadowsoc
 
 有了账号后，打开SSR客户端，填上信息，这里以windows版的SSR客户端为例子：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091910400932.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/32.png?raw=true)
 
 在对应的位置，填上服务器ip、服务器端口、密码、加密方式、协议和混淆，最后将浏览器的代理设置为（http）127.0.0.1和1080即可。账号的端口号就是你自己设置的，而要上网的浏览器的端口号是1080，固定的，谷歌浏览器可以通过 SwitchyOmega 插件来设置。
 
 启动SSR客户端后，右键SSR客户端图标，选择第一个“系统代理模式”，里面有3个子选项，选择”全局模式“，之后就可以用浏览器设置好了的代理模式（http）127.0.0.1和1080翻墙，此模式下所有的网站都会走SSR代理。
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091910401233.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/33.png?raw=true)
 
 ### **常见问题参考解决方法：**
 
@@ -328,11 +328,11 @@ https://bt.byr.cn/login.php
 
 保险起见，这里还是说一下新旧版配置：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091911010334.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/34.png?raw=true)
 
 可以看到新版的自动带有ipv6的检测：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091911022335.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/35.png?raw=true)
 
 旧版修改方式：
 
@@ -359,7 +359,7 @@ https://bt.byr.cn/login.php
 
 ## 3.在客户端ssr里如同ipv4那样配置，只是ip地址换成ipv6的地址
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20091911101536.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/36.png?raw=true)
 
 切换到校园网，切换代理为全局模式，即可白嫖上网，但这种需要先连接校园网登入账号。
 
@@ -411,11 +411,11 @@ DNS64的好处是配置十分方便，足以满足大部分的调试需求。当
 
 3.在你的本地主机上，Settings->Network&Internet->Proxy，开启Proxy，并填入address：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20092111031837.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/37.png?raw=true)
 
 4.控制面板->网络共享中心->网络连接->属性->禁用IPv4协议：
 
-![](https://images.cnblogs.com/cnblogs_com/phoenixash/1850577/o_20092111094738.png)
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/38.png?raw=true)
 
 5.SSR配置ipv6和全局模式，代理规则改为：绕过局域网即可。
 
