@@ -413,7 +413,7 @@ DNS64的好处是配置十分方便，足以满足大部分的调试需求。当
 
 ![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/37.png?raw=true)
 
-4.控制面板->网络共享中心->网络连接->属性->禁用IPv4协议：
+4.控制面板->网络共享中心->网络连接->属性->禁用IPv4协议：【这个ipv4不关也可以上网】
 
 ![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/38.png?raw=true)
 
