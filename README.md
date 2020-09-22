@@ -422,6 +422,17 @@ DNS64的好处是配置十分方便，足以满足大部分的调试需求。当
 ## **测试：**
 
 可自由访问Google、知乎、B站、csdn等，但无法访问校园网。
+## 应用上网问题：
+
+上面配置完，我们会发现只有通过浏览器可以上网，而无法登陆微信、QQ、网易云等，这里可以配置一下应用的代理规则即可，以微信和网易云音乐为例：
+
+**微信：**
+
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/39.png?raw=true)
+
+**网易云音乐：**
+
+![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/40.png?raw=true)
 
 参考：
 
