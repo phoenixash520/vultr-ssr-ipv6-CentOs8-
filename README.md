@@ -435,10 +435,10 @@ DNS64的好处是配置十分方便，足以满足大部分的调试需求。当
 ![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/40.png?raw=true)
 **使用proxifier实现应用不配置代理上网(实测支持微信
 QQ登陆及解决微信图片和文件传输问题)**
-为什么SSRipv6全局下微信和QQ会有很多问题，原因主要还是不适用proxifier的话，SSR代理会出现循环代理的问题，可以使用下面教程的配置，此配置步骤允许发送到代理服务器的数据包通过，防止循环代理错误：
+为什么SSRipv6全局下微信和QQ会有很多问题，原因主要还是不使用proxifier的话，SSR代理会出现循环代理的问题，可以使用下面教程的配置，此配置步骤允许发送到代理服务器的数据包通过，防止循环代理错误：
 https://blog.csdn.net/u013066730/article/details/88788191
-这里我使用的是Windows便携版
-
+这里我使用的是Windows便携版\\
+另外直接使用ipv6登陆QQ会出现10001错误，这里我个人认为是QQ登陆机制有个安全认证的标识，使用ipv6代理的话，安全认证不给通过，可以先使用校园网登陆QQ，获得安全认证后再退出校园网就可以通过代理直接登陆QQ了。
 参考：
 
 [https://medium.com/@tyrr31186065/vultr%E8%87%AA%E5%BB%BAss%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%95%99%E7%A8%8B-7426b117361](https://medium.com/@tyrr31186065/vultr自建ss服务器教程-7426b117361)
