@@ -433,6 +433,11 @@ DNS64的好处是配置十分方便，足以满足大部分的调试需求。当
 **网易云音乐：**
 
 ![](https://github.com/phoenixash520/vultr-ssr-ipv6-CentOs8-/blob/master/40.png?raw=true)
+**使用proxifier实现应用不配置代理上网(实测支持微信
+QQ登陆及解决微信图片和文件传输问题)**
+为什么SSRipv6全局下微信和QQ会有很多问题，原因主要还是不适用proxifier的话，SSR代理会出现循环代理的问题，可以使用下面教程的配置，此配置步骤允许发送到代理服务器的数据包通过，防止循环代理错误：
+https://blog.csdn.net/u013066730/article/details/88788191
+这里我使用的是Windows便携版
 
 参考：
 
